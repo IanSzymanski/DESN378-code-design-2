@@ -31,8 +31,8 @@ Update it once, keep it consistent everywhere.
 
 ## Profile Photo
 
-- [ ] Same photo uploaded to GitHub, Figma, and CodePen
-- [ ] Professional or at least *intentional*
+- [✅] Same photo uploaded to GitHub, Figma, and CodePen
+- [✅] Professional or at least *intentional*
 - [ ] Face visible (helps me learn names!)
 
 ---
