@@ -22,9 +22,9 @@ Update it once, keep it consistent everywhere.
 
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
-| **GitHub** | `https://github.com/IanSzymanski` | ⏳ |
-| **Figma** | `@________` | ⏳ |
-| **CodePen** | `https://codepen.io/________` | ⏳ |
+| **GitHub** | `https://github.com/IanSzymanski` | ✅ |
+| **Figma** | `@4aa133c6_12d8_4` | ✅ |
+| **CodePen** | `https://codepen.io/I_Squiddy` | ✅ |
 | **Portfolio** | *Coming Week 10* | 🔲 |
 
 ---
@@ -65,10 +65,7 @@ Update it once, keep it consistent everywhere.
 
 I enjoy designing for all mediums with the goal of pushing my limits.
 
-<!-- 
-Example: "I'm drawn to motion design and systems thinking. 
-Currently exploring how interaction design can feel more human."
--->
+
 
 ---
 
