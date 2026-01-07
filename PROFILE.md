@@ -9,10 +9,10 @@ Update it once, keep it consistent everywhere.
 
 | Field | Value |
 |-------|-------|
-| **Name** | <!-- First Last --> |
-| **Preferred Name** | <!-- What should I call you? --> |
+| **Name** | Ian Szymanski |
+| **Preferred Name** | Ian |
 | **Pronouns** | <!-- Optional --> |
-| **EWU Email** | <!-- @ewu.edu --> |
+| **EWU Email** | iszymanski@ewu.edu |
 
 ---
 
@@ -22,7 +22,7 @@ Update it once, keep it consistent everywhere.
 
 | Platform | Profile URL | Status |
 |----------|-------------|--------|
-| **GitHub** | `https://github.com/________` | ⏳ |
+| **GitHub** | `https://github.com/IanSzymanski` | ⏳ |
 | **Figma** | `@________` | ⏳ |
 | **CodePen** | `https://codepen.io/________` | ⏳ |
 | **Portfolio** | *Coming Week 10* | 🔲 |
@@ -41,8 +41,8 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Applied/Renewed | ⏳ |
-| Copilot Access | ⏳ |
+| Applied/Renewed | ✅ |
+| Copilot Access | ✅ |
 | Expires | <!-- Date --> |
 
 👉 [Check status or renew](https://education.github.com/pack)
@@ -53,8 +53,8 @@ Update it once, keep it consistent everywhere.
 
 | Item | Status |
 |------|--------|
-| Education Plan Active | ⏳ |
-| Joined Course Team | ⏳ |
+| Education Plan Active | ✅ |
+| Joined Course Team | ✅ |
 | Expires | <!-- Date --> |
 
 👉 [Check status](https://www.figma.com/settings) → Plan
@@ -63,7 +63,7 @@ Update it once, keep it consistent everywhere.
 
 ## About Me
 
-*Optional: A sentence or two about your design interests. This could seed your eventual portfolio bio.*
+I enjoy designing for all mediums with the goal of pushing my limits.
 
 <!-- 
 Example: "I'm drawn to motion design and systems thinking. 
