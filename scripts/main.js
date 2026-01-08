@@ -8,6 +8,8 @@
 
 console.log('Portfolio loaded');
 
+alert('Standard Alert Yo');
+
 // Week 1: You'll add theme toggle code here
 // Week 2: You'll add localStorage persistence here
 // Week 3+: More to come...
