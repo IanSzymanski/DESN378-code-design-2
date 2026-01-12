@@ -39,3 +39,16 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+@keyframes button-style {
+  0% { box-shadow: 0 0 0 0 var(--hover); }
+}
