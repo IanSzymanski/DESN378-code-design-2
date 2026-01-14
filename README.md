@@ -20,14 +20,42 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 
 ---
 
-## Learning Log
-
-### Week 1: Systems That Respond
-*Coming soon...*
-
-### Week 2: Remembering Choices
-*Coming soon...*
-
+# Learning Log
+​
+## Week 1
+​
+### What I Learned
+I learned the difference between the declaring with const and let. In general I also learned a bit about how Javascript is formatted.
+​
+​
+### What Was Hard
+Trying to figure out why I was getting an error, only to realize it was just me forgetting an apostrophe.
+​
+​
+### How I Used AI
+To understand better the firefox web project, I was using AI to explain the purpose and function of each line of code, though no AI was used to actually write code.
+​
+​
+### What's Still Unclear
+Mostly the formatting of differnent symbols and what they mean, like {}=-+><>()
+​
+​
+### Work Completed (Week 0)
+​
+**Engage**
+- [✅] Portfolio Audit
+​
+**Learn**
+- [✅ ] Console Explorer
+- [✅ ] Codedex Console Fundamentals
+​
+**Reflect**
+- [ ✅] Visual Notes: Variables and Strings
+​
+**Build**
+- [✅ ] The Setup
+- [ ✅] The Behavioral Layer
+​
 ---
 
 ## Quick Links
