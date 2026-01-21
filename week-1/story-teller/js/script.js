@@ -11,21 +11,17 @@ const captions = [
   "He sailed towards the red horizon, where new adventures awaited."
 ];
 
-// Track current step
 let currentStep = 0;
 
-// Listen for clicks
 image.addEventListener('click', function() {
   currentStep++;
 
   if (currentStep < captions.length) {
-    // Update caption
+
     caption.textContent = captions[currentStep];
 
-    // Update image
     image.src = `assets/image-${currentStep + 1}.jpg`;
 
-    // Update progress dots
     updateProgress(currentStep);
 
     console.log('Image clicked, currentStep:', currentStep);
