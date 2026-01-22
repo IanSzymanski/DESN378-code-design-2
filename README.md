@@ -22,7 +22,7 @@ This is my workspace for **DESN 378 Code + Design 2** also known as **Web Design
 
 # Learning Log
 ​
-## Week 1
+## Week 0
 ​
 ### What I Learned
 I learned the difference between the declaring with const and let. In general I also learned a bit about how Javascript is formatted.
@@ -56,6 +56,45 @@ Mostly the formatting of differnent symbols and what they mean, like {}=-+><>()
 - [✅ ] The Setup
 - [ ✅] The Behavioral Layer
 ​
+# Learning Log
+​
+## Week 1
+​
+### What I Learned
+I learned what a design system was, why it is useful (or not) and how to implement one. I also learned that AI is very helpful for teaching me what specific lines of code do.
+​
+​
+### What Was Hard
+Understanding why each line of javascript is necessary took some time. I look forward to spending more time with conditionals to smooth out some of the rough edges.
+​
+​
+### How I Used AI
+AI was an integral process of my storyteller process. From directory mistakes to understanding syntax, I used Github Copilot in an interactive way to help me understand the code better.
+​
+​
+### What's Still Unclear
+When it comes to conditionals, understanding all of the different symbols and their meaning on first glance is the hard part. <>=+- are more simple, but I was exposed to ||, == and === which have very distinct meanings.
+​
+​
+
+### Work Completed (Week 1)
+
+**Engage**
+- [✅] VS Code Theme Setup
+
+**Learn**
+- [✅] Codedex.io Variables
+- [✅] HTML Academy 
+
+**Practice**
+- [✅] The Story Teller
+
+**Build**
+- [✅] Portfolio Migration
+- [✅] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [ ] Visual Notes: Week 1--- (Working on it)
 ---
 
 ## Quick Links
