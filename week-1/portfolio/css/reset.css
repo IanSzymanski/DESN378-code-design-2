@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-decoration: none;
+  }
