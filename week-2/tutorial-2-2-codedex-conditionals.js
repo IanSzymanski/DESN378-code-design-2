@@ -107,7 +107,7 @@ if (aqi >= 0 && aqi <= 50) {
 } else if (aqi >= 201 && aqi <= 300) {
   console.log('Very Unhealthy');
 } else {
-  consle.log('Hazardous');
+  console.log('Hazardous');
 }
 // --------------------------------------------
 // EXERCISE 17: ROCK PAPER SCISSORS
