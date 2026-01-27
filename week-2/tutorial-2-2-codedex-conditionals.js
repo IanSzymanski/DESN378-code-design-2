@@ -3,7 +3,7 @@
 // Student: Ian Szymanski
 // Date: 1/26/26
 // ============================================
-​
+
 // --------------------------------------------
 // EXERCISE 11: COIN FLIP
 // Simulate a coin toss using Math.random()
@@ -115,7 +115,7 @@ if (aqi >= 0 && aqi <= 50) {
 // Computer picks random 0-2
 // Determine winner using conditionals
 // --------------------------------------------
-​const player = 1;
+const player = 1;
 const computer = Math.floor(Math.random() * 3);
 
 if (player === 0) {
