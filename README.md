@@ -56,8 +56,6 @@ Mostly the formatting of differnent symbols and what they mean, like {}=-+><>()
 - [✅ ] The Setup
 - [ ✅] The Behavioral Layer
 ​
-# Learning Log
-​
 ## Week 1
 ​
 ### What I Learned
@@ -95,6 +93,44 @@ When it comes to conditionals, understanding all of the different symbols and th
 
 **Reflect**
 - [ ] Visual Notes: Week 1--- (Working on it)
+
+## Week 2
+​
+### What I Learned
+Javascript reads much like a left to right language, and inserting each element into a point in a sentence helps to understand what is happening. Figma's variables are set up in an interesting way, and I am not sure if I like it yet.
+​
+​
+### What Was Hard
+Understanding how my portfolio was transfered into figma was definitely a learning curve. It grouped together individual divs and sections based on their tag, so I had to do some reset work to get it into a more workable state.
+​
+​
+### How I Used AI
+I used github copilot to break down a complicated (for me) function as a phrase. When referring to -element-, if -this- happens, then -that happens, else -those- happen.
+​
+​
+### What's Still Unclear
+Figmas page variable switching isn't very clear to me, so I need to put time into that.
+​
+​
+
+### Work Completed (Week 1)
+
+**Engage**
+- [✅] VS Code Theme Setup
+
+**Learn**
+- [ ] Codedex.io Conditionals
+- [ ] figma variables
+
+**Practice**
+- [ ] The Switch
+
+**Build**
+- [ ] The Foundation
+- [ ] Portfolio in Figma + Style Tile
+
+**Reflect**
+- [ ] Visual Notes: Week 2---
 ---
 
 ## Quick Links
