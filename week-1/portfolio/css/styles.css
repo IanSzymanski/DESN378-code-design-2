@@ -4,11 +4,11 @@
 @import url(reset.css);
   
   body {
-    background: var(--BG);
+    background: var(--gradient-background);
   }
   
   main {
-    margin: 9rem 0 7rem 0;
+    margin: var(--spacing-3xl) var(--spacing-lg) var(--spacing-2xl) var(--spacing-lg);
   }
   
   /* NAVBAR CONTROLS */
@@ -18,12 +18,12 @@
     position: fixed;
     width: 100%;
     z-index: 999;
-    background-color: var(--Moonrock);
-    height: 6.25rem;
+    background-color: var(--light-surface-accent);
+    height: var(--spacing-xl);
     display: flex;
     justify-content: flex-end;
-    gap: 2rem;
-    padding: 2rem;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
     align-items: center;
   }
   
@@ -31,13 +31,13 @@
   
   footer {
     width: 100%;
-    background-color: var(--Moonrock);
-    height: 6.25rem;
+    background-color: var(--light-surface-accent);
+    height: var(--spacing-xl);
     display: flex;
     align-items: center;
-    padding: 2rem;
+    padding: var(--spacing-md);
     justify-content: flex-end;
-    gap: 2rem;
+    gap: var(--spacing-md);
   }
   
   /* SEMANTIC TYPE CONTROLS */
@@ -45,36 +45,44 @@
   h2,
   h3,
   h4 {
-    color: var(--Black-Hole);
+    color: var(--dark-surface-color);
   }
   
   h1 {
-    font-family: "owners-wide", sans-serif;
-    font-size: 8rem;
-    font-weight: 700;
-    line-height: 100%;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
   }
   
   h2 {
     text-align: right;
-    font-family: "owners-wide", sans-serif;
-    font-size: 6rem;
-    font-weight: 700;
-    line-height: 100%;
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
   }
   
   h3 {
-    font-family: "owners-wide", sans-serif;
-    font-size: 1rem;
+    font-family: var(--font-family-subheading);
+    font-size: var(--font-size-h3);
     font-style: italic;
-    font-weight: 800;
+    font-weight: var(--font-weight-bold);
   }
   
   h4 {
-    font-family: "inter", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: var(--font-family-subheading);
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-bold);
     max-width: 39.375rem;
+  }
+  
+  p {
+    color: var(--dark-surface-color);
+    font-family: var(--font-family-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-relaxed);
   }
   
   /* FLEX CONTROLS */
@@ -84,15 +92,15 @@
     align-items: center;
     justify-content: space-between;
     width: 60%;
-    gap: 5.5rem;
+    gap: var(--spacing-lg);
   }
   
   
   .site-picture {
-    box-shadow: var(--Drop-Shadow);
+    box-shadow: var(--shadow-drop);
     object-fit: cover;
     height: auto;
-    max-width: 40rem;
+    max-width: var(--image-size-md);
   }
   
   h1 span,
@@ -110,7 +118,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    gap: 5.5rem;
+    gap: var(--spacing-lg);
   }
   /*To fix above*/
   #reflection {
@@ -121,14 +129,14 @@
     text-align: right;
   }
   
-  #reflection h4 {
+  #reflection p {
     text-align: center;
   }
   
   #contact,
-  #contact h4 {
+  #contact p {
     margin: auto;
-    margin-bottom: 5.5rem;
+    margin-bottom: var(--spacing-lg);
   }
   
   #contact {
@@ -140,10 +148,10 @@
   
   button {
     position: relative;
-    padding: 1.5vw 3vw;
-    border: 2px solid var(--Black-Hole);
-    background: var(--Button-Gradient);
-    color: var(--Black-Hole);
+    padding: var(--spacing-sm) 3vw;
+    border: 2px solid var(--dark-surface-color);
+    background: var(--gradient-primary);
+    color: var(--dark-surface-color);
     text-align: center;
     font-family: "owners-xwide", sans-serif;
     font-size: 2vw;
@@ -151,7 +159,7 @@
     font-weight: 800;
     line-height: 100%;
     cursor: pointer;
-    box-shadow: var(--Drop-Shadow);
+    box-shadow: var(--shadow-drop);
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
@@ -161,8 +169,8 @@
   }
   
   button:active {
-    background-color: var(--Black-Hole);
-    color: var(--Supernova);
+    background-color: var(--dark-surface-color);
+    color: var(--light-surface-color);
     border: none;
     box-shadow: none;
   }
@@ -188,7 +196,7 @@
   button:hover::after {
     top: 5px;
     left: 9px;
-    border: 2px solid var(--Galaxy);
+    border: 2px solid var(--color-purple);
   }
   
   button:active::after {
@@ -200,7 +208,7 @@
   button:hover::before {
     top: -9px;
     left: 4px;
-    border: 2px solid var(--Plasma);
+    border: 2px solid var(--color-green);
   }
   
   button:active::before {
@@ -214,17 +222,17 @@
   .divider {
     position: relative;
     width: 95%;
-    border-bottom: 2px solid var(--Black-Hole);
-    margin: 5.5rem auto;
+    border-bottom: 2px solid var(--dark-surface-color);
+    margin: var(--spacing-lg) auto;
   }
   
   .divider::before {
     content: "";
     position: absolute;
     top: -6px;
-    left: 5px;
+    left: var(--spacing-offset-lg);
     width: 100%;
-    border-bottom: 2px solid var(--Plasma);
+    border-bottom: 2px solid var(--color-green);
   }
   
   .divider::after {
@@ -233,7 +241,7 @@
     top: 8px;
     left: 15px;
     width: 100%;
-    border-bottom: 2px solid var(--Galaxy);
+    border-bottom: 2px solid var(--color-purple);
   }
   @media (max-width: 1380px) {
     .site-row {
@@ -274,7 +282,7 @@
       margin-bottom: -2rem;
     }
     .site-picture {
-      max-width: 90%;
+      max-width: var(--image-size-sm);
     }
   }
   @media (max-width: 800px) {
