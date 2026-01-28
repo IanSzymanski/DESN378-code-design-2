@@ -5,6 +5,7 @@
   
   body {
     background: var(--gradient-background);
+    transition: background 0.3s ease;
   }
   
   main {
@@ -46,6 +47,7 @@
   h3,
   h4 {
     color: var(--dark-surface-color);
+    transition: color 0.3s ease;
   }
   
   h1 {
@@ -83,6 +85,22 @@
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-relaxed);
+    transition: color 0.3s ease;
+  }
+  
+  /* THEME TOGGLE */
+  
+  html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  a.theme-toggle {
+    cursor: pointer;
+    padding: 0 var(--spacing-sm) 0 var(--spacing-sm);
+    border: 4px solid;
+    border-image: var(--gradient-primary) 1;
+    background-color: var(--light-surface-color);
+    text-align: center;
   }
   
   /* FLEX CONTROLS */
@@ -148,16 +166,15 @@
   
   button {
     position: relative;
-    padding: var(--spacing-sm) 3vw;
+    padding: var(--spacing-sm) var(--spacing-md);
     border: 2px solid var(--dark-surface-color);
     background: var(--gradient-primary);
     color: var(--dark-surface-color);
     text-align: center;
-    font-family: "owners-xwide", sans-serif;
+    font-family: var(--font-family-button);
     font-size: 2vw;
-    font-style: italic;
-    font-weight: 800;
-    line-height: 100%;
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-tight);
     cursor: pointer;
     box-shadow: var(--shadow-drop);
     transition: transform 0.2s, box-shadow 0.2s;
@@ -194,8 +211,8 @@
   }
   
   button:hover::after {
-    top: 5px;
-    left: 9px;
+    top: var(--button-offset-hover-y);
+    left: var(--button-offset-hover-x);
     border: 2px solid var(--color-purple);
   }
   
@@ -206,8 +223,8 @@
   }
   
   button:hover::before {
-    top: -9px;
-    left: 4px;
+    top: var(--button-offset-before-y);
+    left: var(--button-offset-before-x);
     border: 2px solid var(--color-green);
   }
   

@@ -46,6 +46,7 @@
   --font-family-heading: "Owners XXWide", sans-serif;
   --font-family-subheading: "Owners XNarrow", sans-serif;
   --font-family-body: "Owners Text", sans-serif;
+  --font-family-button: "Owners XXWide", sans-serif;
   --font-size-h1: 8rem;
   --font-size-h2: 6rem;
   --font-size-h3: 6rem;
@@ -69,6 +70,10 @@
   --spacing-offset-sm: 2px;
   --spacing-offset-md: 4px;
   --spacing-offset-lg: 5px;
+  --button-offset-hover-y: 5px;
+  --button-offset-hover-x: 9px;
+  --button-offset-before-y: -9px;
+  --button-offset-before-x: 4px;
   --image-size-sm: 90%;
   --image-size-md: 40rem;
 }
