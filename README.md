@@ -92,7 +92,7 @@ When it comes to conditionals, understanding all of the different symbols and th
 - [✅] Portfolio in Figma + Style Tile
 
 **Reflect**
-- [ ] Visual Notes: Week 1--- (Working on it)
+- [✅] Visual Notes: Week 1--- (Working on it)
 
 ## Week 2
 ​
@@ -119,18 +119,18 @@ Figmas page variable switching isn't very clear to me, so I need to put time int
 - [✅] VS Code Theme Setup
 
 **Learn**
-- [ ] Codedex.io Conditionals
+- [✅] Codedex.io Conditionals
 - [ ] figma variables
 
 **Practice**
-- [ ] The Switch
+- [✅] The Switch
 
 **Build**
-- [ ] The Foundation
-- [ ] Portfolio in Figma + Style Tile
+- [✅] The Foundation
+- [✅] Portfolio in Figma + Style Tile
 
 **Reflect**
-- [ ] Visual Notes: Week 2---
+- [✅] Visual Notes: Week 2---
 ---
 
 ## Quick Links
