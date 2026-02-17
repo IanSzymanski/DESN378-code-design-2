@@ -1,15 +1,20 @@
 const toggle = document.querySelector(".theme-toggle");
-const savedTheme = localStorage.getItem("theme") || "light";
+
+let savedTheme = localStorage.getItem("theme");
+
+if (!savedTheme) {
+    let prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    savedTheme = prefersDark ? "dark" : "light";
+}
 
 document.documentElement.setAttribute("data-theme", savedTheme);
 console.log("Current theme is:", savedTheme);
 
 toggle.addEventListener("click", function () {
-    const currentTheme = document.documentElement.getAttribute("data-theme");
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    let currentTheme = document.documentElement.getAttribute("data-theme");
+    let newTheme = currentTheme === "dark" ? "light" : "dark";
 
     document.documentElement.setAttribute("data-theme", newTheme);
-    console.log("Theme changed to:", newTheme);
-
     localStorage.setItem("theme", newTheme);
+    console.log("Theme changed to:", newTheme);
 });

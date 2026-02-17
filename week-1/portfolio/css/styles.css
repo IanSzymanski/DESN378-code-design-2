@@ -5,7 +5,12 @@
   
   body {
     background: var(--gradient-background);
-    transition: background 0.3s ease;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    body {
+      transition: background 0.3s ease;
+    }
   }
   
   main {
@@ -47,7 +52,15 @@
   h3,
   h4 {
     color: var(--dark-surface-color);
-    transition: color 0.3s ease;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    h1,
+    h2,
+    h3,
+    h4 {
+      transition: color 0.3s ease;
+    }
   }
   
   h1 {
@@ -85,13 +98,23 @@
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-relaxed);
-    transition: color 0.3s ease;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    p {
+      transition: color 0.3s ease;
+    }
   }
   
   /* THEME TOGGLE */
   
   html {
-    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
   }
   
   .theme-toggle {
@@ -106,8 +129,13 @@
   .theme-toggle:hover {
     background-color: var(--dark-surface-color);
     color: var(--light-surface-color);
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
     transform: translateY(4px);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .theme-toggle:hover {
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
   }
 
   .theme-toggle:hover h4 {
@@ -188,7 +216,12 @@
     line-height: var(--line-height-tight);
     cursor: pointer;
     box-shadow: var(--shadow-drop);
-    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    button {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
   }
   
   button:hover {
@@ -212,8 +245,14 @@
     width: 100%;
     height: 100%;
     border: 0 solid transparent;
-    transition: all 0.2s ease;
     pointer-events: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    button::before,
+    button::after {
+      transition: all 0.2s ease;
+    }
   }
   
   button::after {
