@@ -132,6 +132,46 @@ Figmas page variable switching isn't very clear to me, so I need to put time int
 **Reflect**
 - [✅] Visual Notes: Week 2---
 ---
+# Learning Log
+​
+## Week 
+​
+### What I Learned
+The main thing was data themes that the browser is able to detect, and how I can use javascript to connect the user's input to changing the state.
+​
+​
+### What Was Hard
+Design token naming still isn't strong for me. I am very much a fan of naming things in a very random way, but I can see how it would be hard for others (or even me a year from now) to understand what I meant.
+​
+​
+### How I Used AI
+I used github copilot to help make my javascript smaller, using the shorter versions of if else.
+​
+### What's Still Unclear
+Is there really a limit on how many tokens is necessary. At what point is it too much?
+​
+​
+### Work Completed (Week 3)
+
+**Design Tokens**
+- [✅] variables.css exists
+- [✅] Color tokens defined
+- [✅] Typography tokens defined
+- [✅] Spacing tokens defined
+- [✅] Tokens used in CSS (no hardcoded values)
+
+**Theme System**
+- [✅] Uses data-theme on <html>
+- [✅] Toggle feedback is immediate
+
+**Persistence & Preference**
+- [✅] Theme saved to localStorage
+- [✅] Theme persists on refresh
+- [✅] System preference used on first visit
+
+**Deployment**
+- [✅] Deployed to GitHub Pages
+- [✅] Repository is public
 
 ## Quick Links
 
