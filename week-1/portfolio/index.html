@@ -28,9 +28,36 @@
     <a class="nav-link" href="#contact">
       <h4>CONTACT</h4>
     </a>
-      <a class="theme-toggle">
-        <h4>THEME</h4>
-      </a>
+      <div class="theme-dropdown">
+        <button class="theme-trigger">
+          <h4>THEME</h4>
+        </button>
+        <div class="theme-options">
+          <button data-theme="system">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"stroke-linecap="round">
+              <rect x="2.5" y="5.5" width="19" height="11" rx="1.5"/>
+              <path d="M8 21h8"/>
+              <path d="M12 18v1.5"/>
+            </svg>
+            SYSTEM
+          </button>
+          <button data-theme="light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="6.5"/>
+              <path d="M12 4V1M12 23v-3M20 12h3M1 12h3"/>
+              <path d="M17.66 6.34l2.12-2.12M4.22 19.77l2.12-2.12"/>
+              <path d="M17.66 17.65l2.12 2.12M4.23 4.22l2.12 2.12"/>
+            </svg>
+            LIGHT
+          </button>
+          <button data-theme="dark">
+            <svg viewBox="0 0 27 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round">
+              <path d="M16.49 1.25c-.1-.88.82-1.6 1.51-1.05A10.99 10.99 0 0 1 22.57 9.61c0 6.63-5.37 12-12 12-4.48 0-8.39-2.46-10.45-6.09-.44-.77.41-1.57 1.27-1.33 1.01.28 2.07.43 3.17.43 6.63 0 12-5.37 12-12 0-.46-.03-.92-.08-1.36Z"/>
+            </svg>
+            DARK
+          </button>
+        </div>
+      </div>
   </nav>
   <main>
     <section id="welcome-section">

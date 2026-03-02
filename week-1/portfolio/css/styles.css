@@ -105,103 +105,8 @@
       transition: color 0.3s ease;
     }
   }
-  
-  /* THEME TOGGLE */
-  
-  html {
-  }
 
-  @media (prefers-reduced-motion: no-preference) {
-    html {
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-  }
-  
-  .theme-toggle {
-    cursor: pointer;
-    padding: 0 var(--spacing-sm) 0 var(--spacing-sm);
-    border: 4px solid;
-    border-image: var(--gradient-primary) 1;
-    background-color: var(--light-surface-color);
-    text-align: center;
-  }
-
-  .theme-toggle:hover {
-    background-color: var(--dark-surface-color);
-    color: var(--light-surface-color);
-    transform: translateY(4px);
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    .theme-toggle:hover {
-      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-    }
-  }
-
-  .theme-toggle:hover h4 {
-    color: var(--light-surface-color);
-  }
-  
-  /* FLEX CONTROLS */
-  
-  .site-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-    gap: var(--spacing-lg);
-  }
-  
-  
-  .site-picture {
-    box-shadow: var(--shadow-drop);
-    object-fit: cover;
-    height: auto;
-    max-width: var(--image-size-md);
-  }
-  
-  h1 span,
-  h2 span {
-    display: block;
-    margin-bottom: -3rem;
-  }
-  
-  /* SECTION CONTROLS */
-  
-  #welcome-section,
-  #projects,
-  #reflection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: var(--spacing-lg);
-  }
-  /*To fix above*/
-  #reflection {
-    gap: 0;
-  }
-  
-  #projects h4 {
-    text-align: right;
-  }
-  
-  #reflection p {
-    text-align: center;
-  }
-  
-  #contact,
-  #contact p {
-    margin: auto;
-    margin-bottom: var(--spacing-lg);
-  }
-  
-  #contact {
-    display: block;
-    text-align: center;
-  }
-  
-  /* BUTTON CONTROLS */
+    /* BUTTON CONTROLS */
   
   button {
     position: relative;
@@ -283,6 +188,177 @@
     left: 0;
     border: 0 solid transparent;
   }
+  
+  /* THEME CONTROLS */
+  
+  html {
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+  }
+  
+  .theme-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .theme-trigger {
+    cursor: pointer;
+    padding: 0 var(--spacing-sm);
+    text-align: center;
+  }
+
+  .theme-options {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    display: none;
+    flex-direction: column;
+    margin-top: var(--spacing-xs);
+    background-color: var(--light-surface-color);
+    border: 4px solid;
+    border-image: var(--gradient-primary) .5;
+    z-index: 1000;
+  }
+
+
+  .theme-dropdown.open .theme-options {
+    display: flex;
+  }
+
+  .theme-options button {
+    cursor: pointer;
+    padding: var(--spacing-sm);
+    background: none;
+    border: none;
+    text-align: left;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    color: var(--dark-surface-color);
+    background-color: var(--light-surface-color);
+    font-family: var(--font-family-subheading);
+    white-space: nowrap;
+  }
+
+  .theme-options button svg {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    stroke: currentColor;
+    fill: none;
+  }
+
+  .theme-options button[data-theme="light"] {
+    color: var(--dark-surface-color) !important;
+    background-color: var(--light-surface-color) !important;
+  }
+
+  .theme-options button[data-theme="dark"] {
+    color: var(--light-surface-color) !important;
+    background-color: var(--dark-surface-color) !important;
+  }
+
+  .theme-options button[data-theme="system"] {
+
+    color: var(--dark-surface-color) !important;
+    background-color: var(--light-surface-color) !important;
+  }
+  html[data-theme="dark"] .theme-options button[data-theme="system"] {
+    color: var(--light-surface-color) !important;
+    background-color: var(--dark-surface-color) !important;
+  }
+
+  .theme-options button:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+  .theme-trigger,
+  .theme-options button {
+    position: static;
+    box-shadow: none !important;
+    background: none !important;
+    border-width: 4px !important;
+    border-style: solid !important;
+    border-color: currentColor !important;
+    border-image: var(--gradient-primary) 1 !important;
+  }
+
+
+  .theme-trigger::before,
+  .theme-trigger::after,
+  .theme-options button::before,
+  .theme-options button::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  
+  /* FLEX CONTROLS */
+  
+  .site-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    gap: var(--spacing-lg);
+  }
+  
+  
+  .site-picture {
+    box-shadow: var(--shadow-drop);
+    object-fit: cover;
+    height: auto;
+    max-width: var(--image-size-md);
+  }
+  
+  h1 span,
+  h2 span {
+    display: block;
+    margin-bottom: -3rem;
+  }
+  
+  /* SECTION CONTROLS */
+  
+  #welcome-section,
+  #projects,
+  #reflection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: var(--spacing-lg);
+  }
+
+  #reflection {
+    gap: 0;
+  }
+  
+  #projects h4 {
+    text-align: right;
+  }
+  
+  #reflection p {
+    text-align: center;
+  }
+  
+  #contact,
+  #contact p {
+    margin: auto;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  #contact {
+    display: block;
+    text-align: center;
+  }
+  
+
   
   /* DIVIDER CONTROLS */
   

@@ -1,20 +1,44 @@
-const toggle = document.querySelector(".theme-toggle");
+const dropdown = document.querySelector(".theme-dropdown");
+const trigger = document.querySelector(".theme-trigger");
 
-let savedTheme = localStorage.getItem("theme");
+trigger.addEventListener("click", function (event) {
+  event.stopPropagation();
+  dropdown.classList.toggle("open");
+});
 
-if (!savedTheme) {
-    let prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    savedTheme = prefersDark ? "dark" : "light";
-}
+document.addEventListener("click", function (event) {
+  if (!dropdown.contains(event.target)) {
+    dropdown.classList.remove("open");
+  }
+});
 
-document.documentElement.setAttribute("data-theme", savedTheme);
-console.log("Current theme is:", savedTheme);
+const saved = localStorage.getItem("theme");
+const osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+document.documentElement.dataset.theme = !saved || saved === "system" ? (osDark ? "dark" : "light") : saved;
 
-toggle.addEventListener("click", function () {
-    let currentTheme = document.documentElement.getAttribute("data-theme");
-    let newTheme = currentTheme === "dark" ? "light" : "dark";
+const systemBtn = document.querySelector("button[data-theme='system']");
+const lightBtn = document.querySelector("button[data-theme='light']");
+const darkBtn = document.querySelector("button[data-theme='dark']");
 
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme);
-    console.log("Theme changed to:", newTheme);
+lightBtn.addEventListener("click", function () {
+  document.documentElement.dataset.theme = "light";
+  localStorage.setItem("theme", "light");
+  dropdown.classList.remove("open");
+});
+
+darkBtn.addEventListener("click", function () {
+  document.documentElement.dataset.theme = "dark";
+  localStorage.setItem("theme", "dark");
+  dropdown.classList.remove("open");
+});
+
+systemBtn.addEventListener("click", function () {
+  localStorage.setItem("theme", "system");
+  const osDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (osDark) {
+    document.documentElement.dataset.theme = "dark";
+  } else {
+    document.documentElement.dataset.theme = "light";
+  }
+  dropdown.classList.remove("open");
 });
