@@ -173,6 +173,46 @@ Is there really a limit on how many tokens is necessary. At what point is it too
 - [✅] Deployed to GitHub Pages
 - [✅] Repository is public
 
+# Learning Log
+​
+## Week 6
+​
+### What I Learned
+GSAP Tweens, timelines and scroll interactions, as well as additional information on Figma Variables.
+​
+​
+### What Was Hard
+Working with AI on diagnosing issues and solutions was very difficult at first, as it would try to fix code that already worked. By really defining my problem, and what I want, I can avoid this.
+​
+​
+### How I Used AI
+Claude was my AI of choice for the AI GSAP assignment, and I feel like I got a lot better at prompting because of it.
+​
+​
+### What's Still Unclear
+
+I am still a little murky on how I will have to style my content once the svgs are in the website, but we'll figure it out.
+
+# Learning Log
+​
+## Week 7
+​
+### What I Learned
+How to use GSAP to get the illusion of depth through parallax.
+​
+​
+### What Was Hard
+Fine tuning the values of each layer to get a depth effect that feels realistic was tough. It can create an uncanny valley effect if the values aren't really coherent.
+​
+​
+### How I Used AI
+I used AI to help set up my scrollyteller boilerplate, so my content can fit into place real easy.
+​
+​
+### What's Still Unclear
+
+I am struggling to grasp how to get my individual sections to flow together, but AI is assisting in breaking down the animation concepts.
+
 ## Quick Links
 
 - [My Profile](PROFILE.md)
